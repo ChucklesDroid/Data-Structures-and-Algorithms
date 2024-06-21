@@ -11,3 +11,4 @@ C++ data structures, specialities and complexities
 | std::unordered_set| no duplicates | unordered_sets use hashing and create hash tables so are faster than std::set to access. Worst Case for Insertion and Deletion: O(n) | Space Complexity: O(n) |
 | std::map | key-value pairs -> helps to access values faster without iterating the entire container | Worst case for insertion and deletion: O(logn) -> makes use of Red Black Tree | Space Complexity: O(n) |
 | std::unordered_map | faster insertion and removal than std::map | makes use of hash functions so slower to iterate than std::map. Worst case for Insertion and Deletion: O(n) | Space Complexity: O(n) |
+| std::vector | dynamic array but do not have contiguous memory, ideal for iteration | O(1) for random access, amortized constant O(1) for insertion/removal at end, O(n) for for insertion/removal at any linear distance from end | Space Complexity: O(n) | 
