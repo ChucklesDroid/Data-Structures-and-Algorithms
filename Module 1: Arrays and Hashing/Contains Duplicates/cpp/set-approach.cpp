@@ -13,7 +13,8 @@ public:
   bool containsDuplicate(std::vector<int> nums) {
     // if the size of set is less than initial size then it contains duplicates
     return nums.size() >
-           std::unordered_set<int>(nums.begin(), nums.end()).size();
+        // check the constructor to see how to construct the object
+        std::unordered_set<int>(nums.begin(), nums.end()).size();
   }
 };
 
