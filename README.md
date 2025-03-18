@@ -12,3 +12,5 @@ C++ data structures, specialities and complexities
 | std::map | key-value pairs -> helps to access values faster without iterating the entire container | Worst case for insertion, deletion and accessing the element: O(logn) -> makes use of Red Black Tree | Space Complexity: O(n) | NA |
 | std::unordered_map | faster insertion and removal than std::map | makes use of hash functions so slower to iterate than std::map. Worst case for Insertion, Deletion and accessing the element: O(n), Average tiem: O(1) (but usually dependant on the key value, hash collisions and hash function implementation) | Space Complexity: O(n) | NA |
 | std::vector | dynamic array and have contiguous memory, ideal for iteration | O(1) for random access, amortized constant O(1) for insertion/removal at end, O(n) for for insertion/removal at any linear distance from end | Space Complexity: O(n) | NA |
+
+** If input data is small, prefer tree based data structures instead of hash based but usually just check it from case to case
