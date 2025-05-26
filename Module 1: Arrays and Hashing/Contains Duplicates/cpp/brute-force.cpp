@@ -22,9 +22,14 @@ public:
 };
 
 int main() {
-  Solution solution;
-  std::vector<int> nums = {1, 2, 3, 1};
-  auto duplicates = solution.containsDuplicate(nums);
-  std::cout << "Contains Duplicates" << duplicates;
-  return 0;
+    Solution solution;
+    /*This is wrong initialization, the comma operator just returns the rightmost operand so */
+    /*in this case, its just returning 6.*/
+    /*std::vector<int> test = std::vector<int>((1, 2, 3, 2, 4, 5, 6));*/
+
+    /*"{}" is used for initializing containers*/
+    std::vector<int> nums = {1, 2, 3, 1};
+    auto duplicates = solution.containsDuplicate(nums);
+    std::cout << "Contains Duplicates" << duplicates;
+    return 0;
 }
