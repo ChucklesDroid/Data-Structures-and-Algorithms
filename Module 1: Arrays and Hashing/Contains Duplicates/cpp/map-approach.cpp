@@ -1,7 +1,7 @@
 // Problem: Contains Duplicate
 // Link: https://leetcode.com/problems/contains-duplicate/
 // Solution: Map Approach
-// Time Complexity: O(logn) - RBT (std::map)
+// Time Complexity: O(logn) ~ RBT (std::map)
 // Time Complexity: O(n) ~ hash maps (std::unordered_map) / O(1) in ideal case(avg case) depending upon hash collisions, hash functions and input length
 // Space Complexity: O(n)~ same for both ordered and unordered maps
 
