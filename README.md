@@ -14,3 +14,12 @@ C++ data structures, specialities and complexities
 | std::vector | dynamic array and have contiguous memory, ideal for iteration | O(1) for random access, amortized constant O(1) for insertion/removal at end, O(n) for for insertion/removal at any linear distance from end | Space Complexity: O(n) | NA |
 
 ** If input data is small, prefer tree based data structures instead of hash based but usually just check it from case to case
+
+Smart Pointers
+| Pointer Type | Initializer | Unique Point |
+|---|---|---|
+| Unique Pointers | std::make_unique<>() | has the sole ownership of the object. When the pointer goes out of scope, memory is also cleared. |
+| Shared Pointers | std::make_shared<>() | shares ownership of the object with multiple pointers and uses `ref-count` to keep track of it. When `ref-count` becomes zero, memory is freed. |
+| Weak Pointers (use only with shared pointers) | can be initialised with a shared_ptr, make use of `lock()` (returns shared_ptr) for dereferrencing and `expired()` (returns boolean) for checking if weak_ptr is valid. | does not have ownership over any object and does increase `ref-count` when assigned an object. |
+
+** This requires header file memory
